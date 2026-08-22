@@ -2,6 +2,8 @@
 @source not "../../*.md";
 
 @theme {
+  --breakpoint-xs: 30rem;
+
   --color-desaturated-red: #c17d7d;
   --color-desaturated-red-dark: #af5757;
   --color-dark-grayish-red: #423a3a;
@@ -41,6 +43,23 @@
   input {
     @apply v-focus-ring;
   }
+}
+
+@utility v-content-x {
+  @apply px-8 md:pr-0 md:pl-[19.88%];
+}
+
+@utility v-pattern {
+  @media (width >= 48rem) {
+    background-image: url("/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 57.6389% 100%;
+  }
+}
+
+@utility v-credit-link {
+  @apply text-dark-grayish-red underline underline-offset-2 hover:no-underline;
 }
 
 @utility v-focus-ring {

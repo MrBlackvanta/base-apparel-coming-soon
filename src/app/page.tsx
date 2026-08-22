@@ -1,7 +1,9 @@
+import heroDesktopLg from "@/assets/images/hero-desktop-lg.webp";
 import heroDesktop from "@/assets/images/hero-desktop.webp";
 import heroMobile from "@/assets/images/hero-mobile.webp";
 import { LogoIcon } from "@/components/icons";
 import Attribution from "@/components/layout/attribution";
+import SubscribeForm from "@/components/subscribe-form";
 
 export default function Page() {
   return (
@@ -11,7 +13,11 @@ export default function Page() {
       </header>
 
       <picture className="block md:relative md:col-start-2 md:row-start-1 md:row-end-4">
-        <source media="(min-width: 30rem)" srcSet={heroDesktop.src} />
+        <source
+          media="(min-width: 30rem)"
+          srcSet={`${heroDesktop.src} 610w, ${heroDesktopLg.src} 896w`}
+          sizes="(min-width: 48rem) 42.36vw, 100vw"
+        />
         <img
           src={heroMobile.src}
           width={heroMobile.width}
@@ -22,7 +28,26 @@ export default function Page() {
         />
       </picture>
 
-      <main className="v-content-x md:col-start-1 md:row-start-2" />
+      <main className="v-content-x md:col-start-1 md:row-start-2">
+        <div className="mx-auto max-w-111.25 pt-16 text-center md:mx-0 md:pt-34 md:text-left">
+          <h1 className="text-heading tracking-heading uppercase md:text-heading-md lg:text-heading-lg">
+            <span className="block font-light text-desaturated-red md:leading-12 lg:leading-16">
+              We&rsquo;re{" "}
+            </span>
+            <span className="block font-semibold text-dark-grayish-red">
+              coming{" "}
+              <br />
+              soon
+            </span>
+          </h1>
+          <p className="mt-4 text-body md:mt-4.5 md:text-body-lg">
+            Hello fellow shoppers! We&rsquo;re currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements and
+            our launch deals.
+          </p>
+          <SubscribeForm />
+        </div>
+      </main>
 
       <footer className="v-content-x md:col-start-1 md:row-start-3">
         <Attribution />

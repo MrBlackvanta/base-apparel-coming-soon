@@ -1,41 +1,29 @@
-# Frontend Mentor - Base Apparel coming soon page
+# Frontend Mentor — Base Apparel coming soon page
 
-![Design preview for the Base Apparel coming soon page coding challenge](desktop-preview.jpg)
-
-This is a solution to the [Base Apparel coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
-
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-- [Author](#author)
+A solution to the [Base Apparel coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0), rebuilt from scratch.
 
 ## Overview
 
-### The challenge
-
 Users should be able to:
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Receive an error message when the `form` is submitted if:
-  - The `input` field is empty
-  - The email address is not formatted correctly
+- View the optimal layout depending on their device's screen size
+- See hover and focus states for all interactive elements
+- Receive an error message when the form is submitted with an empty or malformed email address
 
-### Links
+## Links
 
-- Solution URL: [Github](https://github.com/MrBlackvanta/Base-apparel-coming-soon)
-- Live Site URL: [Live](https://coming-soon-vanta.netlify.app/)
+- Solution: [GitHub](https://github.com/MrBlackvanta/base-apparel-coming-soon)
 
-### Built with
+## Built with
 
-- [React](https://reactjs.org/) - JS library
-- [Sass Modules](https://sass-lang.com/) - For styles
+- [Next.js](https://nextjs.org/) — App Router, static export
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS v4](https://tailwindcss.com/)
+
+```
 
 ## Author
 
-- Frontend Mentor - [@MrBlackvanta](https://www.frontendmentor.io/profile/MrBlackvanta)
-- GitHub - [@MrBlackvanta](https://github.com/MrBlackvanta)
+- Frontend Mentor — [@MrBlackvanta](https://www.frontendmentor.io/profile/MrBlackvanta)
+- LinkedIn — [Abdelrhman Abdelaal](https://www.linkedin.com/in/abdelrhman-vanta/)
+```

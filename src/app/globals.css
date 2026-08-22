@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@source not "../../*.md";
+
+@theme inline {
+  --font-sans: var(--font-josefin-sans);
+}
+
+@layer base {
+  body {
+    @apply font-sans;
+  }
+}

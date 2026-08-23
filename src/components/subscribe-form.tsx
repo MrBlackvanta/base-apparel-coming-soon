@@ -65,7 +65,7 @@ export default function SubscribeForm() {
         <button
           type="submit"
           aria-label="Subscribe"
-          className="absolute inset-y-0 right-0 grid w-16 cursor-pointer place-items-center rounded-full v-brand-gradient shadow-btn transition-shadow duration-200 ease-out before:absolute before:inset-0 before:rounded-full before:bg-white/50 before:opacity-0 before:transition-opacity before:duration-200 before:ease-out hover:shadow-btn-hover hover:before:opacity-100 motion-reduce:transition-none motion-reduce:before:transition-none md:w-25"
+          className="absolute inset-y-0 right-0 grid w-16 place-items-center rounded-full v-brand-gradient shadow-btn transition-shadow duration-200 ease-out before:absolute before:inset-0 before:rounded-full before:bg-white/50 before:opacity-0 before:transition-opacity before:duration-200 before:ease-out hover:shadow-btn-hover hover:before:opacity-100 motion-reduce:transition-none motion-reduce:before:transition-none md:w-25"
         >
           <ArrowIcon className="relative h-5 w-3 text-white" />
         </button>

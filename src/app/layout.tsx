@@ -18,7 +18,7 @@ const shareImage = {
   url: "/opengraph-image.jpg",
   width: 1200,
   height: 630,
-  alt: "Base Apparel — a coming soon page, beside a model in an orange shirt.",
+  alt: "Base Apparel: a coming soon page, beside a model in an orange shirt.",
 };
 
 export const metadata: Metadata = {

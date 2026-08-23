@@ -45,6 +45,9 @@
   input {
     @apply v-focus-ring;
   }
+  button:not(:disabled) {
+    cursor: pointer;
+  }
 }
 
 @utility v-content-x {

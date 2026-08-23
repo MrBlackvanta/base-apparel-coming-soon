@@ -90,7 +90,39 @@ across the longest word, in exchange for a round number.
 **The hero photograph is not the one supplied with the challenge.** It is a different
 photograph of the same wardrobe and pose, cropped to the same two sizes (610×800 and
 375×250) and framed to match the supplied crops, so the layout is unaffected — but the hero
-will not pixel-match the design JPGs.
+will not pixel-match the design JPGs. A third 896×1175 variant sits behind `srcset` for
+retina and wide screens, which is the largest the source can honestly give; without it the
+hero upscaled 1.78× at 2560px.
+
+**The design file has no tablet frame, so the tablet layout is a decision, not a
+measurement.** The two-column split starts at 768px, where the columns come out 443/325 —
+the design's own 830/610 proportion — rather than stretching the mobile layout to 1024. The
+alternative would have upscaled the 375-wide mobile crop 2.7× across the widest image on the
+page. Two consequences follow:
+
+- **The heading steps 40 → 48 → 64px** at 768 and 1024 rather than jumping straight to the
+  design's 64px. Measured: 64px needs 385px of advance width and the content column offers
+  only 355px at 768, so the design's size would have spilled into the hero. 64px first fits
+  at about 834px, and it ships from 1024.
+- **The hero band switches source and shape at 480px**, from the mobile crop at `aspect-3/2`
+  to the desktop crop at a fixed 320px height. 320px is exactly `aspect-3/2` at 480 wide, so
+  the transition is seamless (319 → 320px), and it caps the worst upscale anywhere on the
+  page at 1.28×.
+
+**Above 1440px the layout stays proportional.** Columns are `830fr / 610fr` and the content
+block is pinned at 19.88% of the left column — 165/830, exact at the design width and
+scaling as the design would.
+
+**The input's boundary is an inset ring, not a border.** The design draws 1px by default and
+2px on error; as a border that shifts the field's content box by 1px the moment an error
+appears. `inset-ring` is painted, not laid out, so the placeholder and caret do not move.
+
+**The success state is an addition.** The brief only requires error handling and the design
+draws none, so a valid submit clears the field and announces a confirmation in the same slot
+the error uses, keyed so a repeat submission re-announces.
+
+**The mobile input is 14px, which makes iOS Safari zoom on focus** (it zooms below 16px).
+The design specifies 14px and that is what ships.
 
 ## Author
 
